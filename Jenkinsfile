@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     tools {
-        jdk 'jdk-22' // Substitua pelo nome exato da instalação JDK configurada no Jenkins
         maven 'M3' // Certifique-se de que "M3" está configurado no Jenkins
     }
 
