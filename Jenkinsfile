@@ -12,7 +12,9 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/LucasHMDomingues/trab-5.git'
 
                 // Run Maven
-                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                //sh "mvn -Dmaven.test.failure.ignore=true clean package" comando para linux
+                bat "mvn -Dmaven.test.failure.ignore=true clean package"
+
             }
 
             post {
